@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Data Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Create navegation bar-->
+    <nav class="navbar navbar-expand-lg" id="navbar-brand">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="max_temp.html">🌡 Max Temperature</a></li>
+                            <li><a class="dropdown-item" href="humidity.html">🔥 Humidity</a></li>
+                            <li><a class="dropdown-item" href="cloudiness.html">☁️ Cloudiness</a></li>
+                            <li><a class="dropdown-item" href="wind_speed.html">🌬 Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comparison.html">Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="data.html">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Create columns and row to put information-->
+    <div id="main-content-container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3>Wind Speed</h3>
+                <hr>
+                <img src="../static/Assets/Fig4.png">
+                <p>
+                    The wind speed is faster in the northern hemisphere. As the plot shows, above the equator, the wind speed reaches almost 40 mph, while the quickest wind speed is 24 mph in the southern hemisphere.
+                </p>
+
+            </div>
+            <div class="col-lg-4">
+                <h3>Other visualizations</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <a href="max_temp.html"><img src="../static/Assets/Fig1.png" alt="Latitude vs. Max Temperature"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="humidity.html"><img src="../static/Assets/Fig2.png" alt="Latitude vs. Humidity"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                    <a href="cloudiness.html"><img src="../static/Assets/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="wind_speed.html"><img src="../static/Assets/Fig4.png" alt="Latitude vs. Wind Speed" id="imgsel"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<footer id="page-footer"> Web Design Challenge - Margarita Atehortua </footer>
+</html>
